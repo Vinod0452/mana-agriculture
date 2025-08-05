@@ -77,6 +77,7 @@
     <a href="#products">Products</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <section id="home" class="container">
     <h2>Welcome to Mana Agriculture</h2>
     <p>We supply high-quality seeds to small businesses across the region. Our mission is to support agricultural growth through trusted products and reliable service.</p>
@@ -102,41 +103,18 @@
         <h3>Rice Seeds</h3>
         <p>Premium rice varieties for consistent results.</p>
       </div>
-      <!-- Add more products as needed -->
     </div>
   </section>
 
-    <form
-  action="https://formspree.io/f/{FORM_ID}"
-  class="fs-form"
-  target="_top"
-  method="POST"
->
-  <div class="fs-field">
-    <label class="fs-label" for="name">Name</label>
-    <input class="fs-input" id="name" name="name" required />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="email">Email Address</label>
-    <input class="fs-input" id="email" name="email" required />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="number">Phone Number</label>
-    <input class="fs-input" id="number" name="number" />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="message">Inquiry Message</label>
-    <textarea
-      class="fs-textarea"
-      id="message"
-      name="message"
-      required
-    ></textarea>
-  </div>
-  <div class="fs-button-group">
-    <button class="fs-button" type="submit">Submit</button>
-  </div>
-</form>
+  <section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="font-size: 0.9rem; color: #666;">You’ll get an email confirmation after sending your message.</p>
   </section>
 
   <footer>
